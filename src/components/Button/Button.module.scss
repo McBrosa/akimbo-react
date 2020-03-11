@@ -1,0 +1,48 @@
+@import "~styles/color";
+
+%button {
+  font-family: "Roboto";
+  font-size: 1rem;
+  font-weight: 100;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 5px;
+  padding: 0.25rem 2rem;
+}
+
+.primary {
+  @extend %button;
+  border: 1px solid white;
+  background-color: transparent;
+
+  &:hover {
+    border: 1px solid $light-gray;
+    color: $light-gray;
+    background-color: white;
+  }
+}
+
+.primaryReversed {
+  @extend %button;
+  border: 1px solid $light-gray;
+  background-color: white;
+  color: $light-gray;
+
+  &:hover {
+    border: 1px solid white;
+    background-color: $light-gray;
+    color: white;
+  }
+}
+
+.secondary {
+  @extend %button;
+  border: 1px solid $grapefruit;
+  background-color: $grapefruit;
+
+  &:hover {
+    border: 1px solid $dark-grapefruit;
+    color: white;
+    background-color: $dark-grapefruit;
+  }
+}

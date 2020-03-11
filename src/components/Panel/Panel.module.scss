@@ -1,0 +1,94 @@
+@import "~styles/color";
+@import "~styles/layout";
+
+%bold-white-font {
+  font-family: "Roboto";
+  font-weight: bold;
+  color: white;
+}
+
+.single {
+  * {
+    width: 80vw;
+  }
+}
+
+.double {
+  * {
+    width: 40vw;
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+
+  @media screen and (max-width: $mobile-width) {
+    flex-direction: column;
+
+    * {
+      width: 80vw;
+    }
+
+    img {
+      order: 1;
+    }
+  }
+}
+
+img {
+  max-width: 50vw;
+  height: auto;
+  align-self: center;
+}
+
+.image-flex-end {
+  align-self: flex-end;
+}
+
+.full {
+  @include fill-height;
+  width: 100vw;
+}
+
+.half {
+  height: 50vh;
+  max-height: 50vh;
+}
+
+.threeQuaters {
+  height: 75vh;
+  max-height: 75vh;
+}
+
+.red {
+  background-color: #e25f59;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.gray {
+  background-color: #f4f4f4;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.darkGray {
+  background-color: #323232;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.maroon {
+  background-image: url("../../assets/bkg-01.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.video {
+  background-image: url("../../assets/intro-video.mp4");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
