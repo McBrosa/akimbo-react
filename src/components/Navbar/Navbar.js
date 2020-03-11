@@ -157,6 +157,6 @@ export default class Navbar extends React.Component {
   render() {
     const { width } = this.state;
 
-    return width > 640 ? this.renderDesktop() : this.renderMobile();
+    return width > 1060 ? this.renderDesktop() : this.renderMobile();
   }
 }
