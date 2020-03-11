@@ -1,9 +1,8 @@
 import React from "react";
-import PropTypes from "prop-types";
 import classnames from "classnames";
 import logoGray from "../../assets/logo-gray@2x.png";
 import logoWhite from "../../assets/logo@2x.png";
-import { Button, Panel } from "../";
+import { Button } from "../";
 import styles from "./Navbar.module.scss";
 
 export default class Navbar extends React.Component {

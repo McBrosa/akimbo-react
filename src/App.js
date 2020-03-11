@@ -34,7 +34,7 @@ function App(props) {
           sizes="(max-width: 600px) 500px, 1000px"
           src={funds}
           className={styles.logo}
-          alt="funds image"
+          alt="funds"
         />
       </Panel>
       <Panel height="half" layout="single">
@@ -50,20 +50,20 @@ function App(props) {
           sizes="(max-width: 600px) 500px, 1000px"
           src={funds}
           className={styles.logo}
-          alt="funds image"
+          alt="funds"
         />
       </Panel>
       <Panel height="half">
         <Text label={t("panel_4.label")}>{t("panel_4.text")}</Text>
-        <img src={allowance} className={styles.logo} alt="allowance image" />
+        <img src={allowance} className={styles.logo} alt="allowance" />
       </Panel>
       <Panel height="half" background="gray">
-        <img src={grocery} className={styles.logo} alt="grocery image" />
+        <img src={grocery} className={styles.logo} alt="grocery" />
         <Text label={t("panel_5.label")}>{t("panel_5.text")}</Text>
       </Panel>
       <Panel height="half">
         <Text label={t("panel_6.label")}>{t("panel_6.text")}</Text>
-        <img src={pets} className={styles.logo} alt="pets image" />
+        <img src={pets} className={styles.logo} alt="pets" />
       </Panel>
       <div></div>
       <Panel height="threeQuaters" background="darkGray" />
